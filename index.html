@@ -1,336 +1,724 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
-</head> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header class="header-area overlay">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#">AG</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#aboutme">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
-          </li>
-        </ul>
-      </div>
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Arun Govind M | Developer</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Arun Govind M | Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
+    />
+    <script src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-122228201-4");
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Arun</span>
+          <br />
+          Aspiring Software Developer
+        </h1>
+        <!-- <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
+        </p> -->
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
     </div>
-  </nav>
+    <!-- /END Hero Section -->
 
-  <div class="banner">
-    <div class="container">
-      <h1>Arun Govind M</h1>
-      <p>Student &nbsp;&bull;&nbsp; Aspiring Software Engineer &nbsp;&bull;&nbsp; Amrita Vishwa Vidyapeetham</p>
-    </div>    
-  </div>
-</header>
-
-<!-- About Me -->
-<section id="aboutme" class="content">
-  <div class="aboutbanner" style="background-color: #fff; color: #000;">
-    <div class="container">
-      <h1 style="font-weight: 800; text-align: center;">ABOUT ME</h1>
-      <p>
-        Hey there! Welcome to my portfolio. I am Arun, living in Thrissur, Kerala. 
-      </p>
-      <p>
-        Currently a part of an open-source club in my college called amFOSS where we contribute to open-source and learn new skills.        
-      </p>
-    </div>    
-  </div>
-</section>
-
-<!-- Education -->
-
-<section id="education" class="content">
-  <div class="container">
-    <h1 style="font-weight: 800; text-align: center;">EDUCATION</h1> 
-    <div class="main-timeline">
-      <!-- start experience section-->
-      <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-            <div class="date-outer">
-                <span class="date">
-                        <span class="month">10th</span>
-                <span class="year">2018</span>
-                </span>
-            </div>
-        </div>
-        <div class="timeline-content">
-            <h5 class="title">Kendriya Vidyalaya, Thrissur, Kerala</h5>
-        </div>
-    </div>
-    <!-- end experience section-->
-
-    <!-- start experience section-->
-    <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-            <div class="date-outer">
-                <span class="date">
-                        <span class="month">12th</span>
-                <span class="year">2020</span>
-                </span>
-            </div>
-        </div>
-        <div class="timeline-content">
-            <h5 class="title">Kendriya Vidyalaya, Thrissur, Kerala</h5>
-        </div>
-    </div>
-    <!-- end experience section-->
-
-    <!-- start experience section-->
-    <div class="timeline">
-        <div class="icon"></div>
-        <div class="date-content">
-            <div class="date-outer">
-                <span class="date">
-                        <span class="month">Present</span>
-                <span class="year">2020-</span>
-                </span>
-            </div>
-        </div>
-        <div class="timeline-content">
-            <h5 class="title">Amrita Vishwa Vidyapeetham, Amritapuri, Kerala</h5>
-            <p class="description">
-              B.Tech in Computer Science
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/profile.jpg"
+              alt="Profile Image"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              Hey there! Welcome to my portfolio. I am Arun, living in Thrissur,
+              Kerala.
             </p>
+            <p class="about-wrapper__info-text">
+              Currently a part of an open-source club in my college called
+              amFOSS where we contribute to open-source and learn new skills.
+            </p>
+            <span class="about-wrapper__cta">
+              <a
+                href="assets/resume.pdf"
+                target="blank"
+                class="cta-btn cta-btn--resume"
+                >View Resume</a
+              >
+            </span>
+          </div>
         </div>
-    </div>
-    <!-- end experience section-->
-</div>
-    </div>
-</section>
-
-<!-- Skills -->
-
-<section id="skills" class="content">
-  <div class="container">
-    <h1 style="text-align: center; font-weight: 800;">SKILLS</h1>
-    <div class="row">
-      <div class="col-sm">
-        <i class="devicon-python-plain colored" style="font-size: 100px;"></i> 
-        <i class="devicon-c-plain colored" style="font-size: 100px;"></i>
       </div>
-      <div class="col-sm">
-        <i class="devicon-html5-plain colored" style="font-size: 100px;"></i>
-        <i class="devicon-css3-plain colored" style="font-size: 100px;"></i>
-        <i class="devicon-javascript-plain colored" style="font-size: 100px;"></i>
-      </div>
-      <div class="col-sm">
-        <i class="devicon-django-plain" style="font-size: 100px;"></i>
-        <i class="devicon-react-original colored" style="font-size: 100px;"></i>
-        <i class="devicon-flask-original" style="font-size: 100px;"></i>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects -->
-
-<section id="projects" class="content" style="margin: auto;">
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <h1 class="card-heading" style="font-weight: 800; text-align: center;">PROJECTS</h1> 
-      <div class="row">
-
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Digitizing Prescriptions&nbsp;<i class="devicon-flutter-plain colored"
-                  style="font-size: 25px;"></i></h2>
-              <p class="card-text">A Flutter application that converts prescriptions to text format</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/arungovindm2001/digitizing-prescriptions','_blank')"
-                    class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Alpha-Wingman&nbsp;<i class="devicon-flask-original-wordmark colored" style="font-size: 25px;"></i></h2>
-              <p class="card-text">All the tools you need organize your student life</p>  
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/Ragify/Alpha-Wingman','_blank')" class="btn btn-lg btn-outline-secondary">VIEW</button>  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Facial Detection App&nbsp;<i class="devicon-android-plain colored" style="font-size: 25px;"></i>&nbsp;<i class="devicon-java-plain-wordmark colored" style="font-size: 25px;"></i></h2>
-              <p class="card-text">An android app that uses Firebase API to detect faces.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/arungovindm2001/Facial-Detection-App','_blank')" class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">CoviStats&nbsp;<i class="devicon-python-plain colored" style="font-size: 25px;"></i>&nbsp;</h2>
-              <p class="card-text">Our second hackathon project</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/gopik820/CoviStats','_blank')" class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-  
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Blind-Aid&nbsp;<i class="devicon-flask-original-wordmark colored" style="font-size: 25px;"></i></h2>
-              <p class="card-text">Our first Hackathon project. Speaks out the objects detected in the webcam.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/kingjuno/Blind-Aid','_blank')" class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card mb-5 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Weather App&nbsp;<i class="devicon-flask-original-wordmark colored" style="font-size: 25px;"></i></h2>
-              <p class="card-text">A simple weather app using Flask and OpenWeather API</p>  
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://github.com/arungovindm2001/weather-app','_blank')" class="btn btn-lg btn-outline-secondary">VIEW</button>  
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-    </div>
-  </div>
-</section>
-
-<!-- Blogs -->
-
-<section id="blog" class="content">
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <h1 class="card-heading" style="font-weight: 800; text-align: center;">BLOGS</h1> 
-      <div class="row">
-  
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">My First Hackathon</h2>
-              <p class="card-text">My experience in participating Hack-ccessible</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://medium.com/@arungovindm/my-first-hackathon-c43b104ce6c4')" class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-                <small class="text-muted">2 mins</small>
-              </div>
-            </div>
-          </div>          
-        </div>
-        
-
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <div class="card-body">
-              <h2 class="card-heading">Top 5 Must-Have Linux Applications in your Ubuntu system</h2>
-              <p class="card-text"></p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" onclick="window.open('https://medium.com/@arungovindm/top-5-must-have-linux-applications-in-your-ubuntu-system-1b5789631219')"
-                    class="btn btn-lg btn-outline-secondary">VIEW</button>
-                </div>
-                <small class="text-muted">2 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-center text-white">
-  <!-- Grid container -->
-
-  <div class="container p-4">
-    <!-- Section: Social media -->
-    <section class="mb-4">
-
-      <!-- Twitter -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/arungovind_m" target="_blank" role="button"><i class="fa fa-twitter" ></i></a>
-
-      <!-- Instagram -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/arungovind_m" target="_blank" role="button"><i class="fa fa-instagram"></i></a>
-
-      <!-- Linkedin -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/arun-govind-m-0196331b4/" target="_blank" role="button"><i class="fa fa-linkedin"></i></a>
-
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/arungovindm2001" target="_blank" role="button"><i class="fa fa-github"></i></a>
-
-      <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="https://gitlab.com/arungovindm" target="_blank" role="button"><i class="fa fa-gitlab"></i></a>
     </section>
-    <!-- Section: Social media -->
+    <!-- /END About Section -->
 
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    &copy; <script type="text/javascript">document.write(new Date().getUTCFullYear());</script> Copyright<br>
-    Arun Govind M
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
+    <section id="education" class="content">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="main-timeline">
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+              <div class="date-outer">
+                <span class="date">
+                  <span class="month">10th</span>
+                  <span class="year">2018</span>
+                </span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h5 class="title">Kendriya Vidyalaya, Thrissur, Kerala</h5>
+            </div>
+          </div>
+          <!-- end experience section-->
 
-  <script src="index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+          <!-- start experience section-->
+          <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+              <div class="date-outer">
+                <span class="date">
+                  <span class="month">12th</span>
+                  <span class="year">2020</span>
+                </span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h5 class="title">Kendriya Vidyalaya, Thrissur, Kerala</h5>
+            </div>
+          </div>
+          <!-- end experience section-->
+
+          <!-- start education section-->
+          <div class="timeline">
+            <div class="icon"></div>
+            <div class="date-content">
+              <div class="date-outer">
+                <span class="date">
+                  <span class="month">Present</span>
+                  <span class="year">2020-</span>
+                </span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <h5 class="title">
+                Amrita Vishwa Vidyapeetham, Amritapuri, Kerala
+              </h5>
+              <p class="description">B.Tech in Computer Science</p>
+            </div>
+          </div>
+          <!-- end experience section-->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="skills-wrapper">
+          <h2 class="section-title dark-blue-text">Skills</h2>
+          <div class="row">
+            <div class="col-sm-3">
+              <i
+                class="devicon-python-plain colored"
+                style="font-size: 100px"
+              ></i>
+              <i class="devicon-c-plain colored" style="font-size: 100px"></i>
+            </div>
+            <div class="col-sm-3">
+              <i
+                class="devicon-html5-plain colored"
+                style="font-size: 100px"
+              ></i>
+              <i
+                class="devicon-css3-plain colored"
+                style="font-size: 100px"
+              ></i>
+              <i
+                class="devicon-javascript-plain colored"
+                style="font-size: 100px"
+              ></i>
+            </div>
+            <div class="col-sm-3">
+              <i class="devicon-django-plain" style="font-size: 100px"></i>
+              <i
+                class="devicon-react-original colored"
+                style="font-size: 100px"
+              ></i>
+              <i class="devicon-flask-original" style="font-size: 100px"></i>
+            </div>
+            <div class="col-sm-3">
+              <i
+                class="devicon-flutter-plain colored"
+                style="font-size: 100px"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="skills-wrapper">
+          <h2 class="section-title dark-blue-text">Workspace</h2>
+          <div class="col-sm-3">
+            <i
+              class="devicon-ubuntu-plain colored"
+              style="font-size: 100px"
+            ></i>
+            <svg width="100px" height="100px" viewBox="0 0 128 128">
+              <path
+                d="M3.656 45.043s-3.027-2.191.61-5.113l8.468-7.594s2.426-2.559 4.989-.328l78.175 59.328v28.45s-.039 4.468-5.757 3.976zm0 0"
+                fill="#2489ca"
+              ></path>
+              <path
+                d="M23.809 63.379L3.656 81.742s-2.07 1.543 0 4.305l9.356 8.527s2.222 2.395 5.508-.328l21.359-16.238zm0 0"
+                fill="#1070b3"
+              ></path>
+              <path
+                d="M59.184 63.531l36.953-28.285-.239-28.297S94.32.773 89.055 3.99L39.879 48.851zm0 0"
+                fill="#0877b9"
+              ></path>
+              <path
+                d="M90.14 123.797c2.145 2.203 4.747 1.48 4.747 1.48l28.797-14.222c3.687-2.52 3.171-5.645 3.171-5.645V20.465c0-3.735-3.812-5.024-3.812-5.024L98.082 3.38c-5.453-3.379-9.027.61-9.027.61s4.593-3.317 6.843 2.96v112.317c0 .773-.164 1.53-.492 2.214-.656 1.332-2.086 2.57-5.504 2.051zm0 0"
+                fill="#3c99d4"
+              ></path>
+            </svg>
+            <svg width="100px" height="100px" viewBox="0 0 128 128">
+              <path
+                fill="#F34F29"
+                d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Digitizing Prescriptions&nbsp;<i
+                  class="devicon-flutter-plain colored"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                A Flutter application that converts prescriptions to text format
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/arungovindm2001/digitizing-prescriptions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://cdn.pixabay.com/photo/2021/11/29/20/47/audit-6833793_960_720.png"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Alpha Wingman&nbsp;<i
+                  class="devicon-flask-original-wordmark colored"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                All the tools you need organize your student life
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://alphawingman.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/Ragify/Alpha-Wingman"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://cdn.pixabay.com/photo/2018/08/10/12/03/school-tools-3596680_960_720.jpg"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Facial Detection App&nbsp;<i
+                  class="devicon-android-plain colored"
+                  style="font-size: 25px"
+                ></i
+                >&nbsp;<i
+                  class="devicon-java-plain-wordmark colored"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                An android app that uses Firebase API to detect faces.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/arungovindm2001/Facial-Detection-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://i0.wp.com/rankone.io/wp-content/uploads/2018/11/howfrworks.png?resize=1080%2C675&ssl=1"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                CoviStats&nbsp;<i
+                  class="devicon-python-plain"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                See vaccination availibity and the CoViD stats of India with
+                this application
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://share.streamlit.io/gopik820/covistats/main/app.py"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/gopik820/CoviStats"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://www.fda.gov/files/covid19-1600x900.jpg"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Somatos&nbsp;<i
+                  class="devicon-typescript-plain"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                Analyzes your posture & notifies you in real-time!
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://somatos.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a
+                  href="https://github.com/arungovindm2001/Somatos"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://user-images.githubusercontent.com/69108486/133930929-417115e1-6ffd-4dce-945e-6b5a0972876b.png"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Sia&nbsp;<i
+                  class="devicon-javascript-plain"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                A Chrome extension that not only makes your browsing experience
+                safe but makes it optimized
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/arungovindm2001/Sia"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://github.com/arungovindm2001/Sia/raw/main/icon.png"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Blind Aid&nbsp;<i
+                  class="devicon-flask-original-wordmark colored"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                Speaks out the objects detected in the webcam.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/kingjuno/Blind-Aid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://d1m75rqqgidzqn.cloudfront.net/wp-data/2020/07/24011215/2-1.png"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">
+                Weather App&nbsp;<i
+                  class="devicon-flask-original-wordmark colored"
+                  style="font-size: 25px"
+                ></i>
+              </h3>
+              <p class="project-wrapper__text-info">
+                A simple weather app using Flask and OpenWeather API
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://github.com/arungovindm2001/weather-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="https://images.ctfassets.net/hrltx12pl8hq/6TIZLa1AKeBel0yVO7ReIn/1fc0e2fd9fcc6d66b3cc733aa2547e11/weather-images.jpg?fit=fill&w=800&h=300"
+                  class="img-fluid"
+                  alt="Project Image"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">BLOGS</h2>
+        <div class="contact-wrapper">
+          <article class="row">
+            <div class="contact-wrapper__text">
+              <h3 class="contact-wrapper__text-title">
+                My First Hackathon
+              </h3>
+              <p class="contact-wrapper__text-info">
+                My experience in participating Hack-ccessible
+              </p>
+              <div class="contact-wrapper__text-btns">
+                <a
+                href="https://medium.com/@arungovindm/my-first-hackathon-c43b104ce6c4"
+                target="blank"
+                class="cta-btn cta-btn--resume"
+                >View Blog</a
+              >
+              </div>
+            </div>
+            <div class="contact-wrapper__text">
+              <h3 class="contact-wrapper__text-title">
+                Top 5 Must-Have Linux Applications in your Ubuntu system
+              </h3>
+              <div class="contact-wrapper__text-btns">
+                <a
+                href="https://medium.com/@arungovindm/top-5-must-have-linux-applications-in-your-ubuntu-system-1b5789631219"
+                target="blank"
+                class="cta-btn cta-btn--resume"
+                >View Blog</a
+              >
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a
+            href="mailto:arungovindm@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="google"
+          >
+            <i class="fa fa-google"></i>
+          </a>
+          <a
+            href="https://twitter.com/arungovind_m"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com/arungovind_m"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/arungovindm2001"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa fa-github"></i>
+          </a>
+          <a
+            href="https://gitlab.com/arungovindm"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="gitlab"
+          >
+            <i class="fa fa-gitlab"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arun-govind-m-0196331b4/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> All Rights Reserved
+          <a
+            href="https://github.com/arungovindm2001/arungovindm2001.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa fa-github"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
 </html>
