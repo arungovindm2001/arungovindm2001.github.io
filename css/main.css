@@ -12,6 +12,7 @@ html {
 body {
   text-align: center;
   line-height: 1.5;
+  background-color: rgb(37, 37, 37);
 }
 h1 {
   font-weight: 700;
@@ -99,6 +100,7 @@ a:hover {
     background-image: none;
   }
 }
+
 .cta-btn--hero {
   color: #5b86e5;
   -webkit-text-fill-color: #5b86e5;
@@ -325,6 +327,7 @@ a:hover {
 
 .main-timeline .month {
   font-size: 18px;
+  color: #232323;
   font-weight: 700;
 }
 
@@ -410,6 +413,7 @@ a:hover {
   .main-timeline .date-outer:after {
     width: 110px;
     height: 110px;
+    color:rgba(174, 174, 192, 0.4)
   }
   .main-timeline .date {
     top: 30%;
@@ -585,7 +589,7 @@ section .row span {
   background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
   color: #fff;
   height: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
   padding-bottom: 10%;
 }
 @media (max-width: 75em) {
@@ -690,9 +694,9 @@ section .row span {
   height: 100vh;
   display: flex;
   align-items: center;
-  background: #fff;
+  background: rgb(37, 37, 37);
   font-weight: 400;
-  color: #272341;
+  color: #e8e5f7;
   padding: 0rem 5.6rem;
   top: 0;
   left: 0;
@@ -775,7 +779,7 @@ section .row span {
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 2px solid #000000;
+  border: 2px solid #ece7e7;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -787,7 +791,7 @@ section .row span {
   position: absolute;
   top: 20%;
   left: 50%;
-  border: 2px solid #5b86e5;
+  border: 2px solid #bcd2ff;
   transform: translate(-50%, -100%) rotate(45deg);
   border-top: none;
   border-left: none;
@@ -828,7 +832,7 @@ section .row span {
   background-image: linear-gradient(135deg, #114649 0%, #0e1524 100%);
   color: #fff;
   height: 100%;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 80%, 100% 100%, 37% 86%, 0% 80%, 0 0);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
   padding-bottom: 10%;
 }
 @media (max-width: 75em) {
