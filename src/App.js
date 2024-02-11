@@ -1,20 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-
 import "./App.css";
-import Hero from "./components/Hero";
+
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Blogs from "./components/Blogs";
+import Routes from "./routes";
 
 function App() {
   return (
-    <div className="m-0 h-screen bg-primary text-white overflow-hidden">
+    <div className="m-0 h-screen bg-primary text-white select-none">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Hero />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
+      <Routes />
     </div>
   );
 }
