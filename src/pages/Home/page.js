@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <div className="flex flex-col h-full items-center justify-center">
+    <div className="flex flex-col h-screen items-center justify-center">
       <h1 className="text-5xl font-RedHat uppercase font-extrabold md:tracking-widest p-0 select-none animate-fadeIn">
         Arun Govind M
       </h1>

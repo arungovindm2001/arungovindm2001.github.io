@@ -5,7 +5,7 @@ import Routes from './routes';
 
 function App() {
   return (
-    <div className="m-0 h-screen bg-primary text-white select-none">
+    <div className="m-0 text-white select-none">
       <Navbar />
       <Routes />
     </div>

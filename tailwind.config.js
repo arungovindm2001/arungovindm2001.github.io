@@ -21,6 +21,7 @@ module.exports = {
       },
       fontFamily: {
         RedHat: ['Red Hat Display', 'serif'],
+        DMSans: ['DM Sans', 'serif'],
       },
       colors: {
         primary: '#1C212C',
